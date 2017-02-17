@@ -33,9 +33,19 @@ THE SOFTWARE.
     <relativePath />
   </parent>
 
-  <artifactId>remoting</artifactId>
-  <version>2.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
+  <artifactId>remoting</artifactId>
+
+
+  <!-- remoting version and this plugin version should be in lock step -->
+  <version>3.3-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.jenkins-ci.main</groupId>
+      <artifactId>remoting</artifactId>
+      <version>3.3</version>
+    </dependency>
+  </dependencies>
 
   <name>Remoting override plugin</name>
   <licenses>
@@ -75,14 +85,6 @@ THE SOFTWARE.
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.jenkins-ci.main</groupId>
-      <artifactId>remoting</artifactId>
-      <version>3.3</version>
-    </dependency>
-  </dependencies>
 
   <build>
     <plugins>
