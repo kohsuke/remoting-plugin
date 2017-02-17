@@ -91,7 +91,7 @@ THE SOFTWARE.
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>1.122-SNAPSHOT</version>
+        <version>1.121</version>
         <configuration>
           <archive>
             <manifestEntries>
