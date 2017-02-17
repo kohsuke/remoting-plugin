@@ -98,6 +98,25 @@ THE SOFTWARE.
           </archive>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>list-dependencies</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>list</goal>
+            </goals>
+            <configuration>
+              <outputFile>${project.build.directory}/${project.build.finalName}/META-INF/dependencies.txt</outputFile>
+              <includeScope>runtime</includeScope>
+
+              <!-- unless explicitly exluded, this optional dependency from parent POM ends up showing up in dependencies.txt -->
+              <excludeArtifactIds>slf4j-api</excludeArtifactIds>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
