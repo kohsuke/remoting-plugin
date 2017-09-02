@@ -44,7 +44,7 @@ THE SOFTWARE.
   </properties>
 
   <!-- remoting version and this plugin version should be in lock step -->
-  <version>3.3-SNAPSHOT</version>
+  <version>3.12-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
