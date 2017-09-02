@@ -124,12 +124,9 @@ THE SOFTWARE.
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
+        <version>2.1-20170902.003100-2</version><!-- pending PR #73 -->
         <configuration>
-          <archive>
-            <manifestEntries>
-              <Core-Component>true</Core-Component>
-            </manifestEntries>
-          </archive>
+          <coreComponent>true</coreComponent>
         </configuration>
       </plugin>
       <plugin>
