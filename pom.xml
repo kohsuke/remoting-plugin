@@ -49,7 +49,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>remoting</artifactId>
-      <version>3.11</version>
+      <version>3.12-20170902.005501-1</version>
     </dependency>
     <!-- Upper bound from the core -->
     <dependency>
